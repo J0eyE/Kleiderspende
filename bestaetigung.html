@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang ="de">
+<head>
+    <link href="//db.onlinewebfonts.com/c/01a1cdebb8bf5b8573622fa6f689369c?family=Vladimir+Script" rel="stylesheet" type="text/css"/>
+    <link rel="icon" type="image/svg+xml" href="Bilder/favicon.svg" sizes="any">
+    <link rel="icon" href="Bilder/favicon.png" type="image/png">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <title>Bestätigung | Regensburg Hilft</title>
+    <style type="text/css">
+        @import url(//db.onlinewebfonts.com/c/01a1cdebb8bf5b8573622fa6f689369c?family=Vladimir+Script);
+        html {color:rgb(255, 255, 255);}
+        body h1 { text-align: center; font-size: 350%; background-color: rgba(212,44,18,255); color: rgb(255, 255, 255); font-family: "Vladimir Script"; src: url("//db.onlinewebfonts.com/t/01a1cdebb8bf5b8573622fa6f689369c.eot"); src: url("//db.onlinewebfonts.com/t/01a1cdebb8bf5b8573622fa6f689369c.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/01a1cdebb8bf5b8573622fa6f689369c.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/01a1cdebb8bf5b8573622fa6f689369c.woff") format("woff"), url("//db.onlinewebfonts.com/t/01a1cdebb8bf5b8573622fa6f689369c.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/01a1cdebb8bf5b8573622fa6f689369c.svg#Vladimir Script") format("svg"); }
+        body { background-image: url("Bilder/Hintergrund.jpg"); background-size: cover; background-attachment: fixed; max-width: 100%; background-position: right;}
+        header nav ul {display: flex; justify-content: space-between; list-style: none;}
+        header nav ul li {text-align: left;}
+        header nav ul li:last-child {text-align: right;}
+        header nav ul li a { color: rgb(255, 255, 255);}
+        main div { display: flex; background-color: rgba(0, 0, 0, 0.5); color:rgb(255, 255, 255); }
+        footer nav ul { text-align: center; list-style: none; }
+        footer nav ul li a { color:rgb(255, 255, 255) }
+        @media screen and (max-width: 767px) {
+            main { display: block; hyphens: auto; }
+            main nav, main div { width:100%; }    
+        }
+    </style>
+</head>
+<body>
+    <h1>Regensburg Hilft</h1>
+</body>
+<header>
+    <nav>
+        <ul>
+            <li>
+                <a href="index.html">Home</a>
+                <a href="kontakt.html">Kontakt</a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/">Instagram</a>
+                <a href="https://www.facebook.com/">Facebook</a>
+                <a href="https://www.twitter.com/">Twitter</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <div>
+        <section>
+            <h2>Vielen Dank!</h2>
+            <h3>Sie haben das folgende Krisengebiet ausgewählt:</h3> 
+            <p><span id="region"></span></p>
+            <h3>Ihre Spende:</h3>
+            <p><span id="muetzen"></span></p>
+            <p><span id="jacken"></span></p>
+            <p><span id="pullover"></span></p>
+            <p><span id="shirts"></span></p>
+            <p><span id="hosen"></span></p>
+            <p><span id="schuhe"></span></p>
+            <p><span id="sonstiges"></span></p>
+            <h3>Spendenbeschreibung:</h3> 
+            <p><span id="spende"></span></p>
+            <h3>Adresse:</h3> 
+            <p>
+            <span id="nachname"></span> <span id="vorname"></span><br/>
+            <span id="strasse"></span><br/>
+            <span id="postleitzahl"></span> <span id="ort"></span>
+            </p>
+            <h3><span id="danke"></span></h3>
+            <script type="text/javascript">
+                const selectedRegion = new URLSearchParams(window.location.search).get("region");
+                const muetzen = new URLSearchParams(window.location.search).get("muetzen");
+                const jacken = new URLSearchParams(window.location.search).get("jacken");
+                const pullover = new URLSearchParams(window.location.search).get("pullover");
+                const shirts = new URLSearchParams(window.location.search).get("shirts");
+                const hosen = new URLSearchParams(window.location.search).get("hosen");
+                const schuhe = new URLSearchParams(window.location.search).get("schuhe");
+                const sonstiges = new URLSearchParams(window.location.search).get("sonstiges");
+                const spende = new URLSearchParams(window.location.search).get("spende");
+                const vorname = new URLSearchParams(window.location.search).get("vorname");
+                const nachname = new URLSearchParams(window.location.search).get("nachname");
+                const strasse = new URLSearchParams(window.location.search).get("strasse");
+                const ort = new URLSearchParams(window.location.search).get("ort");
+                const postleitzahl = new URLSearchParams(window.location.search).get("postleitzahl");
+                const dankeText = new URLSearchParams(window.location.search).get("danke");
+                document.getElementById("region").textContent = selectedRegion;
+                document.getElementById("muetzen").textContent = muetzen;
+                document.getElementById("jacken").textContent = jacken;
+                document.getElementById("pullover").textContent = pullover;
+                document.getElementById("shirts").textContent = shirts;
+                document.getElementById("hosen").textContent = hosen;
+                document.getElementById("schuhe").textContent = schuhe;
+                document.getElementById("sonstiges").textContent = sonstiges;
+                document.getElementById("spende").textContent = spende;
+                document.getElementById("vorname").textContent = vorname;
+                document.getElementById("nachname").textContent = nachname;
+                document.getElementById("strasse").textContent = strasse;
+                document.getElementById("ort").textContent = ort;
+                document.getElementById("postleitzahl").textContent = postleitzahl;
+                document.getElementById("danke").textContent = dankeText; 
+            </script>
+        </section>
+    </div>
+</main>
+<footer>
+    <nav>
+        <ul>
+            <li>
+                <a href="privacy.html">Datenschutz</a>
+                <a href="imprint.html">Impressum</a>
+        </li>
+        </ul>
+    </nav>
+</footer>
+</html>
